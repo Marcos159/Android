@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NuevoRestaurante" >
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/tvNombre" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvNombre"
+        android:layout_alignRight="@+id/tvNombre"
+        android:layout_below="@+id/tvNombre"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNombre"
+        android:layout_below="@+id/etNombre"
+        android:text="@string/tvDireccion" />
+
+    <EditText
+        android:id="@+id/etDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDireccion"
+        android:layout_alignRight="@+id/etNombre"
+        android:layout_below="@+id/tvDireccion"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etDireccion"
+        android:layout_below="@+id/etDireccion"
+        android:text="@string/tvTelefono" />
+
+    <EditText
+        android:id="@+id/etPlato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvPlato"
+        android:layout_alignRight="@+id/etDireccion"
+        android:layout_below="@+id/tvPlato"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btImagen"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ivRestaurante"
+        android:text="@string/btImagen" />
+
+    <ImageView
+        android:id="@+id/ivRestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btImagen"
+        android:layout_alignRight="@+id/btImagen"
+        android:layout_alignTop="@+id/tvNombre"
+        android:src="@drawable/ic_launcher" />
+
+    <CheckBox
+        android:id="@+id/cbFavorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPlato"
+        android:layout_centerVertical="true"
+        android:text="@string/cbFavorito" />
+
+    <Button
+        android:id="@+id/btAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbFavorito"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btAceptar" />
+
+    <Button
+        android:id="@+id/btCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btAceptar"
+        android:layout_alignBottom="@+id/btAceptar"
+        android:layout_alignParentRight="true"
+        android:text="@string/btCancelar" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTelefono"
+        android:layout_alignRight="@+id/etDireccion"
+        android:layout_below="@+id/tvTelefono"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/tvPlato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etTelefono"
+        android:layout_below="@+id/etTelefono"
+        android:text="@string/tvPlato" />
+
+</RelativeLayout>

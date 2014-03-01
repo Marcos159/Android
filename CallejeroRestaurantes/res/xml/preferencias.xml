@@ -1,0 +1,19 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Personal">
+        <CheckBoxPreference
+            android:key="opcion_ver_favoritos"
+            android:title="Sólo favoritos"
+            android:summary="Ver sólo a los restaurantes favoritos" />
+        <CheckBoxPreference
+            android:key="opcion_ver_imagenes"
+            android:title="Sin imagenes favoritos"
+            android:summary="Ver sólo a los contactos favoritos" />
+        <EditTextPreference
+            android:key="opcion_ver_Nombre"
+            android:title="Ver restaurantes nombre"
+            android:summary="Ver restaurantes con el mismo nombre"
+             android:dialogTitle="Escribe el nombre" />
+        
+    </PreferenceCategory>
+</PreferenceScreen>

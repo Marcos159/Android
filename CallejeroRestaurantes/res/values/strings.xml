@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CallejeroRestaurantes</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="SinDatos">No hay Datos</string>
+    <string name="title_activity_nuevo_restaurante">Nuevo_restaurante</string>
+    <string name="tvNombre">Nombre del Restaurante</string>
+    <string name="tvDireccion">Direccion</string>
+    <string name="tvTelefono">Telefono</string>
+    <string name="tvPlato">Plato Principal</string>
+    <string name="btImagen">Imagen</string>
+    <string name="btPlato">Imagen</string>
+    <string name="cbFavorito">Favorito</string>
+    <string name="btAceptar">Aceptar</string>
+    <string name="btCancelar">Cancelar</string>
+    <string name="title_activity_fila">Fila</string>
+    <string name="title_activity_configuracion">Configuracion</string>
+    <string name="tvSeleccionarImagen">Selecciona la imagen principal a mostrar</string>
+    <string name="tvSeleccionarAccion">Selecciona la accion al pulsar el restaurante</string>
+    <string name="rbPlato">Plato</string>
+    <string name="rbLogo">Logo</string>
+    <string name="rbGps">Ver GPS</string>
+    <string name="rbDatos">Ver Datos</string>
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="btEntrar">Entrar</string>
+    <string name="btAjustes">Ajustes</string>
+    <string name="title_activity_ajustes">Ajustes</string>
+    <string name="menu_nuevo_restaurante">Nuevo Restaurante</string>
+    <string name="nuevo_restaurante_message">Nuevo Restaurante</string>
+    <string name="menu_inicio">Inicio</string>
+    <string name="Ver_Favoritos">Ver solo Favoritos</string>
+    <string name="check_Favoritos">Favoritos</string>
+    <string name="Ver_plato_principal">Ver Plato Principal</string>
+    <string name="Plato_principal">Plato</string>
+    <string name="Boton_Mapa">Mapa</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="tv_ver_Plato">Ver Plato Principal</string>
+    <string name="Ver_imagenes">Selecciona para no ver imagenes</string>
+    <string name="cb_SinImagenes">Sin Imagenes</string>
+    <string name="title_activity_acerca_de">AcercaDe</string>
+
+</resources>
