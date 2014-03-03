@@ -60,6 +60,15 @@ public class RestauranteAdapter extends BaseAdapter {
 		}
 	}
 	
+	public void verPlato(String plato){
+		listaActual.clear();
+		for(Restaurante restaurante : listaRestaurantes){
+			if(restaurante.getPlato().equals(plato))
+				listaActual.add(restaurante);
+		}
+	}
+	
+	
 	/*
 	 * Muestra todos los restaurantes de la aplicacion
 	 */

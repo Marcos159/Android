@@ -30,6 +30,8 @@ public class NuevoRestaurante extends Activity implements OnClickListener  {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_nuevo_restaurante);
 		
+		datos = new BaseDatos(this);
+		
 		Button btAceptar = (Button) findViewById(R.id.btAceptar);
         btAceptar.setOnClickListener(this);
         Button btCancelar = (Button) findViewById(R.id.btCancelar);
@@ -100,10 +102,10 @@ public class NuevoRestaurante extends Activity implements OnClickListener  {
 			restaurante.setTelefono(etTelefono.getText().toString());
 			restaurante.setPlato(etPlato.getText().toString());
 			restaurante.setFavorito(cbFavorito.isChecked());
-			System.out.println("ESTE ES FAVORITO"+restaurante.esFavorito());
-			//datos.nuevoRestaurante(restaurante);
 			
-			MainActivity.listaRestaurantes.add(restaurante);
+			datos.nuevoRestaurante(restaurante);
+			
+			// TODO MainActivity.listaRestaurantes.add(restaurante);
 			
 			Toast.makeText(getApplicationContext(), getResources().getString(R.string.nuevo_restaurante_message), Toast.LENGTH_SHORT).show();
 			break;

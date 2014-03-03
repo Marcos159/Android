@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+   android:background="@drawable/restaurante"
     tools:context=".Inicio" >
 
     <Button
@@ -32,5 +33,14 @@
         android:layout_alignLeft="@+id/btAjustes"
         android:layout_alignRight="@+id/btAjustes"
         android:text="@string/Boton_Mapa" />
+
+    <Button
+        android:id="@+id/btAyuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btMapa"
+        android:layout_alignLeft="@+id/btMapa"
+        android:layout_alignRight="@+id/btMapa"
+        android:text="@string/bt_Ayuda" />
 
 </RelativeLayout>

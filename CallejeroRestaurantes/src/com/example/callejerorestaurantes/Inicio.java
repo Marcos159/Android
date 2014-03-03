@@ -1,8 +1,5 @@
 package com.example.callejerorestaurantes;
 
-
-
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -27,6 +24,9 @@ public class Inicio extends Activity implements OnClickListener{
         Button btMapa = (Button) findViewById(R.id.btMapa);
         btMapa.setOnClickListener(this);
         
+        Button btAyuda = (Button) findViewById(R.id.btAyuda);
+        btAyuda.setOnClickListener(this);
+        
 	}
 
 	@Override
@@ -48,7 +48,11 @@ public class Inicio extends Activity implements OnClickListener{
 			startActivity(intent);
 		}
 		if (v.getId()==R.id.btMapa){
-			Intent intent = new Intent (Inicio.this,Mapa.class);
+			Intent intent = new Intent(Inicio.this, Mapa.class);
+			startActivity(intent);
+		}
+		if (v.getId()==R.id.btAyuda){
+			Intent intent = new Intent(Inicio.this, Ayuda.class);
 			startActivity(intent);
 		}
 	}

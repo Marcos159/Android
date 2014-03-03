@@ -40,5 +40,9 @@
     <string name="Ver_imagenes">Selecciona para no ver imagenes</string>
     <string name="cb_SinImagenes">Sin Imagenes</string>
     <string name="title_activity_acerca_de">AcercaDe</string>
+    <string name="title_activity_mapa1">Mapa1</string>
+    <string name="title_activity_ayuda">Ayuda</string>
+    <string name="bt_Ayuda">Ayuda</string>
+    <string name="bt_Distancia">Distancia</string>
 
 </resources>

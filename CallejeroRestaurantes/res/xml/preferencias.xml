@@ -1,14 +1,17 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="Personal">
+    <PreferenceCategory android:title="Propiedades">
         <CheckBoxPreference
             android:key="opcion_ver_favoritos"
             android:title="Sólo favoritos"
             android:summary="Ver sólo a los restaurantes favoritos" />
-        <CheckBoxPreference
-            android:key="opcion_ver_imagenes"
-            android:title="Sin imagenes favoritos"
-            android:summary="Ver sólo a los contactos favoritos" />
+       
+        <EditTextPreference
+            android:key="opcion_ver_Plato"
+            android:title="Ver restaurantes Plato Principal"
+            android:summary="Ver restaurantes que tengan el mismo Plato Principal"
+            android:dialogTitle="Escribe el plato" /> 
+        
         <EditTextPreference
             android:key="opcion_ver_Nombre"
             android:title="Ver restaurantes nombre"
